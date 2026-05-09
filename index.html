@@ -15,7 +15,7 @@
   <!-- NAV -->
   <nav id="navbar">
     <div class="nav-logo">Your Name</div>
-    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
     <ul class="nav-links" id="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#work">Work</a></li>
@@ -81,43 +81,42 @@
       <h2 class="section-title">Επιλεγμένη <em>δουλειά</em></h2>
     </div>
     <div class="gallery-grid">
-      <!-- CARD 1: Replace the placeholder div with <img src="images/project1.jpg" alt="..." /> -->
-      <div class="gallery-item" data-animate>
+      <div class="gallery-item" data-animate data-delay="0">
         <div class="gallery-img-placeholder">✦</div>
         <div class="gallery-caption">
           <p class="gallery-tag">Villa · Mykonos</p>
           <p class="gallery-title">Πλήρης ψηφιακή στρατηγική</p>
         </div>
       </div>
-      <div class="gallery-item offset-down" data-animate>
+      <div class="gallery-item offset-down" data-animate data-delay="100">
         <div class="gallery-img-placeholder">✦</div>
         <div class="gallery-caption">
           <p class="gallery-tag">Boutique Hotel · Σαντορίνη</p>
           <p class="gallery-title">Instagram & TikTok content</p>
         </div>
       </div>
-      <div class="gallery-item" data-animate>
+      <div class="gallery-item" data-animate data-delay="200">
         <div class="gallery-img-placeholder">✦</div>
         <div class="gallery-caption">
           <p class="gallery-tag">Guesthouse · Μέτσοβο</p>
           <p class="gallery-title">Rebranding & content plan</p>
         </div>
       </div>
-      <div class="gallery-item" data-animate>
+      <div class="gallery-item" data-animate data-delay="100">
         <div class="gallery-img-placeholder">✦</div>
         <div class="gallery-caption">
           <p class="gallery-tag">Airbnb · Αθήνα</p>
           <p class="gallery-title">Φωτογράφιση & copywriting</p>
         </div>
       </div>
-      <div class="gallery-item offset-up" data-animate>
+      <div class="gallery-item offset-up" data-animate data-delay="200">
         <div class="gallery-img-placeholder">✦</div>
         <div class="gallery-caption">
           <p class="gallery-tag">Mountain Lodge · Ήπειρος</p>
           <p class="gallery-title">Social media management</p>
         </div>
       </div>
-      <div class="gallery-item" data-animate>
+      <div class="gallery-item" data-animate data-delay="300">
         <div class="gallery-img-placeholder">✦</div>
         <div class="gallery-caption">
           <p class="gallery-tag">Eco Villa · Κρήτη</p>
@@ -137,22 +136,22 @@
         <h2 class="section-title">Οι πλατφόρμες <em>μου</em></h2>
       </div>
       <div class="platforms-grid" data-animate>
-        <a href="https://instagram.com/yourusername" target="_blank" class="platform-card">
+        <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" class="platform-card">
           <div class="platform-icon">📸</div>
           <span class="platform-name">Instagram</span>
           <span class="platform-handle">@yourusername</span>
         </a>
-        <a href="https://tiktok.com/@yourusername" target="_blank" class="platform-card">
+        <a href="https://tiktok.com/@yourusername" target="_blank" rel="noopener noreferrer" class="platform-card">
           <div class="platform-icon">🎵</div>
           <span class="platform-name">TikTok</span>
           <span class="platform-handle">@yourusername</span>
         </a>
-        <a href="https://youtube.com/@yourusername" target="_blank" class="platform-card">
+        <a href="https://youtube.com/@yourusername" target="_blank" rel="noopener noreferrer" class="platform-card">
           <div class="platform-icon">▶</div>
           <span class="platform-name">YouTube</span>
           <span class="platform-handle">@yourusername</span>
         </a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank" class="platform-card">
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="platform-card">
           <div class="platform-icon">✍</div>
           <span class="platform-name">LinkedIn</span>
           <span class="platform-handle">@yourusername</span>
@@ -175,6 +174,8 @@
     <span>© 2026 Your Name</span>
     <span>Content Creator & Digital Strategist</span>
   </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
 
   <script src="script.js"></script>
 </body>
